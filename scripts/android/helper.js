@@ -2,7 +2,7 @@ var fs          = require("fs");
 var path        = require("path");
 var parseString = require("xml2js").parseString;
 
-var buildGradleFile = path.join("platforms", "android", "app", "build.gradle");
+var buildGradleFile = path.join("platforms", "android", "build.gradle");
 
 function rootBuildGradleExists() {
 	return fs.existsSync(buildGradleFile);
