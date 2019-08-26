@@ -44,5 +44,15 @@ dependencies {
 
 cdvPluginPostBuildExtras.add({
     apply plugin: 'com.google.gms.google-services'
+    
+    // THE FOLLOWING CODE IS NEEDED TO GET FIREBASE ANDROID SDK WORKING
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:support-v4:27.1.0'
+        }
+    }
+
+    com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+    
     apply plugin: 'io.fabric'
 })
