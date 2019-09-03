@@ -55,13 +55,13 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		<source-file src="src/android/FirebasePluginMessageReceiverManager.java" target-dir="src/org/apache/cordova/firebase" />
 		<source-file src="src/android/colors.xml" target-dir="res/values" />
 
-		<dependency-classpath name="com.android.tools.build:gradle:3.3.0" />
-		<dependency-classpath name="com.google.gms:google-services:4.2.0" />
+		<dependency-classpath name="com.android.tools.build:gradle:3.2.1" />
+		<dependency-classpath name="com.google.gms:google-services:4.1.0" />
 		<dependency-classpath name="io.fabric.tools:gradle:1.26.1" />
 		
 		<framework src="src/android/build.gradle" custom="true" type="gradleReference" />
 
-		<framework-implementation name="com.google.android.gms:play-services-analytics-impl:16.0.7" />
+		<framework-implementation name="com.google.android.gms:play-services-analytics-impl:16.0.8" />
 		<framework-implementation name="com.google.android.gms:play-services-measurement-base@[16.0.4]" />
 		<framework-implementation name="com.google.firebase:firebase-core:16.0.8" />
 		<framework-implementation name="com.google.firebase:firebase-auth:16.1.0" />
