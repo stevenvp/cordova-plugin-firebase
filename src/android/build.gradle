@@ -55,4 +55,18 @@ cdvPluginPostBuildExtras.add({
     com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
     
     apply plugin: 'io.fabric'
+    
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+        allprojects {
+            compileOptions {
+                sourceCompatibility JavaVersion.VERSION_1_8
+                targetCompatibility JavaVersion.VERSION_1_8
+            }
+        }
+    }
 })
